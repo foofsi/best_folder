@@ -12,7 +12,7 @@ $mysqli->query("UPDATE `users` SET `Phone`=911 WHERE ID=3");
 'INSERT INTO `users`(`First_Name`, `Last_Name`, `Phone`, `Username`, `Password`) VALUES ("Bill","Cosby","39982513", "billyboy123", "hehexd" '
 
 
-  echo "<table style='width:100%;'>"
+  echo "<table style='width:100%;'>";
     <tr>
       <th>ID</th>
       <th>Firstname</th>
@@ -22,7 +22,6 @@ $mysqli->query("UPDATE `users` SET `Phone`=911 WHERE ID=3");
       <th>Password</th>
     </tr>
 
-  <?php
 
   for ($row_no = $res->num_rows - 1; $row_no >= 0; $row_no--) {
       $res->data_seek($row_no);
