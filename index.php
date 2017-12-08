@@ -9,7 +9,7 @@ if ($mysqli->connect_errno) {
 
 $res = $mysqli->query("SELECT * FROM users");
 $mysqli->query("UPDATE `users` SET `Phone`=911 WHERE ID=3");
-'INSERT INTO `users`(`First_Name`, `Last_Name`, `Phone`, `Username`, `Password`) VALUES ("Bill","Cosby","39982513", "billyboy123", "hehexd" '
+$mysqli->query('INSERT INTO `users`(`First_Name`, `Last_Name`, `Phone`, `Username`, `Password`) VALUES ("Bill","Cosby","39982513", "billyboy123", "hehexd"')
 
 
   echo "<table style='width:100%;'>";
