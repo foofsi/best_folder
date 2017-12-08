@@ -22,6 +22,7 @@ $mysqli->query('DELETE FROM `users` WHERE ID=3');
       echo "<th>Username</th>";
       echo "<th>Password</th>";
     echo "</tr>";
+    
 
 
   for ($row_no = $res->num_rows - 1; $row_no >= 0; $row_no--) {

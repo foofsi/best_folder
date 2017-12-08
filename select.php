@@ -14,7 +14,7 @@ echo "<table style='width:100%;'>";
     echo "<th>Username</th>";
     echo "<th>Password</th>";
   echo "</tr>";
-
+  
 
 for ($row_no = $res->num_rows - 1; $row_no >= 0; $row_no--) {
     $res->data_seek($row_no);
