@@ -5,6 +5,17 @@
 $res = $mysqli->query("SELECT * FROM users");
 
 
+echo "<table style='width:100%;'>";
+  echo "<tr>";
+    echo "<th>ID</th>";
+    echo "<th>Firstname</th>";
+    echo "<th>Lastname</th>";
+    echo "<th>Phone</th>";
+    echo "<th>Username</th>";
+    echo "<th>Password</th>";
+  echo "</tr>";
+
+
 for ($row_no = $res->num_rows - 1; $row_no >= 0; $row_no--) {
     $res->data_seek($row_no);
     $row = $res->fetch_assoc();
