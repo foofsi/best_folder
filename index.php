@@ -13,14 +13,14 @@ $mysqli->query('INSERT INTO `users`(`First_Name`, `Last_Name`, `Phone`, `Usernam
 
 
   echo "<table style='width:100%;'>";
-    <tr>
-      <th>ID</th>
-      <th>Firstname</th>
-      <th>Lastname</th>
-      <th>Phone</th>
-      <th>Username</th>
-      <th>Password</th>
-    </tr>
+    echo "<tr>";
+      echo "<th>ID</th>";
+      echo "<th>Firstname</th>";
+      echo "<th>Lastname</th>";
+      echo "<th>Phone</th>";
+      echo "<th>Username</th>";
+      echo "<th>Password</th>";
+    echo "</tr>";
 
 
   for ($row_no = $res->num_rows - 1; $row_no >= 0; $row_no--) {
