@@ -5,7 +5,7 @@
 ?>
 
 <?php
-if(isset($_POST['First_Name'], $_POST['Last_Name'], $_POST['Phone'], $_POST ['Username'], $_POST ['Password'] ))
+if(isset($_POST [$mysqli->query('INSERT INTO `users`(`First_Name`, `Last_Name`, `Phone`, `Username`, `Password`) VALUES ("'.$First_Name.'", "'.$Last_Name.'", "'.$Phone.'", "'.$Username.'", "'.$Password.'"')] ))
 
 {
   $First_Name= $_POST['First Name'];
@@ -29,10 +29,10 @@ if(isset($_POST['First_Name'], $_POST['Last_Name'], $_POST['Phone'], $_POST ['Us
   <input type="submit">
 </form>
 
-<<?php
+<?php
 
 
-$mysqli->query('INSERT INTO `users`(`First_Name`, `Last_Name`, `Phone`, `Username`, `Password`) VALUES ("'.$First_Name.'", "'.$Last_Name.'", "'.$Phone.'", "'.$Username.'", "'.$Password.'"');
+//$mysqli->query('INSERT INTO `users`(`First_Name`, `Last_Name`, `Phone`, `Username`, `Password`) VALUES ("'.$First_Name.'", "'.$Last_Name.'", "'.$Phone.'", "'.$Username.'", "'.$Password.'"');
 
 
  ?>
