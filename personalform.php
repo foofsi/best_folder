@@ -5,9 +5,10 @@
 ?>
 
 <?php
-if(isset($_POST [$mysqli->query('INSERT INTO `users`(`First_Name`, `Last_Name`, `Phone`, `Username`, `Password`) VALUES ("'.$First_Name.'", "'.$Last_Name.'", "'.$Phone.'", "'.$Username.'", "'.$Password.'"')] ))
+if(isset($_POST['First_Name'], $_POST['Last_Name'], $_POST['Phone'], $_POST ['Username'], $_POST ['Password'] ))
+ {
+   $mysqli->query('INSERT INTO `users`(`First_Name`, `Last_Name`, `Phone`, `Username`, `Password`) VALUES ("'.$First_Name.'", "'.$Last_Name.'", "'.$Phone.'", "'.$Username.'", "'.$Password.'"');
 
-{
   $First_Name= $_POST['First Name'];
   $Last_Name= $_POST['Last Name'];
   $Phone= $_POST['Phone'];
@@ -28,11 +29,3 @@ if(isset($_POST [$mysqli->query('INSERT INTO `users`(`First_Name`, `Last_Name`, 
   <input type="text" name="Password" placeholder="Password">
   <input type="submit">
 </form>
-
-<?php
-
-
-//$mysqli->query('INSERT INTO `users`(`First_Name`, `Last_Name`, `Phone`, `Username`, `Password`) VALUES ("'.$First_Name.'", "'.$Last_Name.'", "'.$Phone.'", "'.$Username.'", "'.$Password.'"');
-
-
- ?>
