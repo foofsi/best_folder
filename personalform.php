@@ -23,7 +23,7 @@ if(isset($_POST['First_Name'], $_POST['Last_Name'], $_POST['Phone'], $_POST ['Us
 
 ?>
 
-<form action = "personalform.php" method "post">
+<form action="" method="post">
   <input type="text" name="First_Name" placeholder="First Name">
   <input type="text" name="Last_Name" placeholder="Last Name">
   <input type="text" name="Phone" placeholder="Phone Number">
