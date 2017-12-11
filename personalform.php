@@ -5,12 +5,16 @@
 ?>
 
 <?php
-if(isset($_POST['First_Name'], $_POST['Last_Name'], $_POST['Phone'], $_POST ['Username'], $_POST ['Password'] ))
+if(isset($_POST['First_Name']))
+if(isset($_POST['Last_Name']))
+if(isset($_POST['Phone']))
+if(isset($_POST['Username']))
+if(isset($_POST['Password']))
+
  {
 
-
-  $First_Name= $_POST['First Name'];
-  $Last_Name= $_POST['Last Name'];
+  $First_Name= $_POST['First_Name'];
+  $Last_Name= $_POST['Last_Name'];
   $Phone= $_POST['Phone'];
   $Username= $_POST['Username'];
   $Password= $_POST['Password'];
