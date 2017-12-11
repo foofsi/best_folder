@@ -5,11 +5,8 @@
 ?>
 
 <?php
-if(isset($_POST['First_Name']))
-if(isset($_POST['Last_Name']))
-if(isset($_POST['Phone']))
-if(isset($_POST['Username']))
-if(isset($_POST['Password']))
+if(isset($_POST['First_Name']) && ($_POST['Last_Name']) && ($_POST['Phone']) && ($_POST['Username']) && ($_POST['Password']))
+
 
  {
 
