@@ -28,3 +28,11 @@ if(isset($_POST['First_Name'], $_POST['Last_Name'], $_POST['Phone'], $_POST ['Us
   <input type="text" name="Password" placeholder="Password">
   <input type="submit">
 </form>
+
+<<?php
+
+
+$mysqli->query('INSERT INTO `users`(`First_Name`, `Last_Name`, `Phone`, `Username`, `Password`) VALUES ("'.$First_Name.'", "'.$Last_Name.'", "'.$Phone.'", "'.$Username.'", "'.$Password.'"');
+
+
+ ?>
