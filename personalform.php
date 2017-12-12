@@ -5,7 +5,7 @@
 ?>
 
 <?php
-if(isset($_POST['First_Name']) && ($_POST['Last_Name']) && ($_POST['Phone']) && ($_POST['Username']) && ($_POST['Password']))
+if(isset($_POST['First_Name']) && (isset($_POST['Last_Name']) && (isset($_POST['Phone']) && (isset($_POST['Username']) && (isset($_POST['Password']))
 
 
  {
