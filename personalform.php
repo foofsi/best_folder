@@ -10,11 +10,11 @@ if(isset($_POST['First_Name']) && (isset($_POST['Last_Name']) && (isset($_POST['
 
  {
 
-  $First_Name= $_POST['First_Name'];
-  $Last_Name= $_POST['Last_Name'];
-  $Phone= $_POST['Phone'];
-  $Username= $_POST['Username'];
-  $Password= $_POST['Password'];
+  $First_Name= $_POST['First_Name']
+  $Last_Name= $_POST['Last_Name']
+  $Phone= $_POST['Phone']
+  $Username= $_POST['Username']
+  $Password= $_POST['Password']
 
   echo "First Name: {$First_Name}  Last Name: {$Last_Name} Phone Number: {$Phone} Username: {$Username} Password: {$Password}";
 
