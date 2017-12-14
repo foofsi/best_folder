@@ -2,6 +2,12 @@
 
  require_once("connect.php");
 
-$mysqli->query('DELETE FROM `users` WHERE ID=3');
+print_r($_GET);
+
+if(isset($_GET['id']))
+{
+$ID= $_GET['id'];
+}
+$mysqli->query('DELETE FROM `users` WHERE  ID='.$ID);
 
  ?>

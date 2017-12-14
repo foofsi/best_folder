@@ -8,9 +8,6 @@ if ($mysqli->connect_errno) {
 
 
 $res = $mysqli->query("SELECT * FROM users");
-$mysqli->query("UPDATE `users` SET `Phone`=911 WHERE ID=3");
-$mysqli->query('INSERT INTO `users`(`First_Name`, `Last_Name`, `Phone`, `Username`, `Password`) VALUES ("Bill","Cosby","39982513", "billyboy123", "hehexd"');
-$mysqli->query('DELETE FROM `users` WHERE ID=3');
 
 
   echo "<table style='width:100%;'>";
@@ -21,14 +18,16 @@ $mysqli->query('DELETE FROM `users` WHERE ID=3');
       echo "<th>Phone</th>";
       echo "<th>Username</th>";
       echo "<th>Password</th>";
+      echo "<th>Delete</th>";
+      echo "<th>Edit</th>";
     echo "</tr>";
-    
+
 
 
   for ($row_no = $res->num_rows - 1; $row_no >= 0; $row_no--) {
       $res->data_seek($row_no);
       $row = $res->fetch_assoc();
-      //echo " id = " . $row['ID'] . "\n";
+
       echo "<tr>";
       echo "<td>".$row["ID"]."</td>";
       echo "<td>".$row["First_Name"]."</td>";
@@ -36,6 +35,9 @@ $mysqli->query('DELETE FROM `users` WHERE ID=3');
       echo "<td>".$row["Phone"]."</td>";
       echo "<td>".$row["Username"]."</td>";
       echo "<td>".$row["Password"]."</td>";
+      echo "<td> <a href='delete.php?id=".$row["ID"]."'>delete</a></td>";
+      echo '<td> <a href="edit.php?id='.$row["ID"].'">edit</a></td>';
+
       echo "</tr>";
     }
 
