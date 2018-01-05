@@ -1,0 +1,7 @@
+For every table that I have I need to include these files.
+
+
+1. config.php $host="localhost" (refer to the book for more info)
+2. connect.php
+3. index.php
+4. user.php (this changes depending on the table title)
